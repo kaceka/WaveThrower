@@ -16,14 +16,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Sinwave.cpp \
+    Wave.cpp \
+    Waveplayer.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    Sinwave.h \
+    Wave.h \
+    Waveplayer.h \
     mainwindow.h
 
 FORMS += \
     mainwindow.ui
+
+QT += multimedia
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
